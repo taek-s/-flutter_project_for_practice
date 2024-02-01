@@ -21,6 +21,30 @@ class BaseApp extends StatelessWidget {
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
+  Widget RainbowCard(int index) {
+    List<Color> rainbowColors = [
+      Colors.red,
+      Colors.orange,
+      Colors.yellow,
+      Colors.green,
+      Colors.blue,
+      const Color.fromRGBO(8, 0, 116, 1.0),
+      Colors.purple
+    ];
+
+    return Card(
+      color: Colors.grey,
+      elevation: 10.0,
+      child: Center(
+        child: Container(
+          width: 300.0,
+          height: 300.0,
+          color: rainbowColors[index],
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -56,7 +80,7 @@ class HomePage extends StatelessWidget {
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
               ),
-              children: [for (int i = 0; i < 7; i++) RainbowCard(colorNum: i)],
+              children: [for (int i = 0; i < 7; i++) RainbowCard(i)],
             ),
             Padding(
               padding: const EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 10.0),
@@ -136,34 +160,6 @@ class Login extends StatelessWidget {
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-// TODO 만들어보고 있는중..
-class RainbowCard extends StatefulWidget {
-  const RainbowCard({
-    super.key,
-    required int colorNum,
-  });
-
-  @override
-  State<RainbowCard> createState() => _RainbowCardState();
-}
-
-class _RainbowCardState extends State<RainbowCard> {
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      color: Colors.grey,
-      elevation: 10.0,
-      child: Center(
-        child: Container(
-          width: 300.0,
-          height: 300.0,
-          color: Colors.yellow,
-        ),
       ),
     );
   }
