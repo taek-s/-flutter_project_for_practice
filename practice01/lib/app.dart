@@ -52,14 +52,44 @@ class HomePage extends StatelessWidget {
         ),
         body: TabBarView(
           children: <Widget>[
-            Container(
-              color: Colors.yellow,
+            GridView(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+              ),
+              children: [for (int i = 0; i < 7; i++) RainbowCard(colorNum: i)],
             ),
-            Container(
-              color: Colors.orange,
+            Padding(
+              padding: const EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 10.0),
+              child: Column(
+                children: [
+                  Expanded(
+                    flex: 3,
+                    child: Container(
+                      color: Colors.red,
+                    ),
+                  ),
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      color: Colors.green,
+                    ),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Container(
+                      color: Colors.blue,
+                    ),
+                  ),
+                ],
+              ),
             ),
-            Container(
-              color: Colors.red,
+            Align(
+              alignment: Alignment.bottomRight,
+              child: Container(
+                width: 100.0,
+                height: 100.0,
+                color: Colors.red,
+              ),
             ),
           ],
         ),
@@ -106,6 +136,34 @@ class Login extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+// TODO 만들어보고 있는중..
+class RainbowCard extends StatefulWidget {
+  const RainbowCard({
+    super.key,
+    required int colorNum,
+  });
+
+  @override
+  State<RainbowCard> createState() => _RainbowCardState();
+}
+
+class _RainbowCardState extends State<RainbowCard> {
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      color: Colors.grey,
+      elevation: 10.0,
+      child: Center(
+        child: Container(
+          width: 300.0,
+          height: 300.0,
+          color: Colors.yellow,
+        ),
       ),
     );
   }
