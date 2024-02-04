@@ -40,7 +40,14 @@ class HomePage extends StatelessWidget {
             onPressed: () {},
             icon: const Icon(Icons.arrow_back),
           ),
-          title: const Text('플러터 연습중'),
+          title: const Text(
+            '플러터 연습중',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 30.0,
+              fontStyle: FontStyle.italic,
+            ),
+          ),
           actions: [
             IconButton(
                 onPressed: () {
