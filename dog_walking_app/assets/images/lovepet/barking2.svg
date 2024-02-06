@@ -1,0 +1,12 @@
+<svg width="40.000000" height="40.000000" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<pattern id="pattern_2_2130" patternContentUnits="objectBoundingBox" width="1.000000" height="1.000000">
+			<use xlink:href="#image2_213_0" transform="matrix(0.02,0,0,0.02,0,0)"/>
+		</pattern>
+		<image id="image2_213_0" width="50.000000" height="50.000000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABHNCSVQICAgIfAhkiAAAA4VJREFUaIHN2kuIHEUYB/DfmocSUTYmaIiIYdGDQaPxcdAlbNioKGSFHIx4EwT1IIoIEURFjagHURCJl0VQFgIeVPCmEQIGfEQ0MaJGDUEjGONr1fjImszmUD3OTG/3TPd0T/f+4aPp6uqq/7+n6quvvhr6xzl4Bq/gtALt1IrNmMZsZKNtz0bwKKZwdeXMcuAeNLREzGIierYJx9rKp6oidUrO+hvxHIZi5cuj63lY3FZ+qE9euZFHyBJsS3nnwuh6MFb+VT+k+kEeIVuEL56Ei6Lr3lj5kdyMBozF+EXnvGi3I1rD7du28nWVM+2BTdJFNG11VHe9MJdGcXrVRHthSm8hD9XGDgsz1rsmQ51bsQerIjtXmIPTmBGG3Dd4H4dz8iwFZ+v9a+S1z4RFc1VlKoTVuWwhTTuOl7GyCiGbByikab/hqiIks6wjZxTpICOGhYihb2QRsqBIBzkwihv7fTmLkKyerQy8iBWDaHgJPlV8DjSwFQ9jB/7uUvdLrC1byGMliJjFgVi7pwrhy1P4L6H+cbyB+3GLsI6tNDfqzoRl+L0kIQ2cn9LPjhztHMPX2I57caUMc3hLSSKa9pa5W+Jx/FOw3c9xSbefah8u7qU2J/ZjUoiWrxPCmjK84idpDy4z+EWwTJtOc7835/ga8wEH04RsqJRGcexOEnImrqiaSUEcSBIyptrVvChO4PUkIeNVMymIJ6Vka75QvxfKYr/i7jR1F9RA6AR2xsomdUYVu/BBTMSaNBFwX8UiDms5lieisuej+zEhuNwj7FeWCVvkozLkEN6tUMQMLo31v0FnYLhWKx1LyB/E35mDEXOT04O0yajfYdwZE3B7RLqJMdkyOQhZjSqH1YSQwWxGvy9EPLZG93uxVEh+HMUfuLyXiCFhz1ClkMfxZqzs7dj9hzrPYX4Qgs1UjFcsoqg1s///o7kg3tVN5TzDj/g+6cEKnadM891uS1P44Dwgl8UaeCRNBNVP8n5sH67vJmKhcIAz0q1SxZjBT/gO7wnZlF2CoFQMYRFuEMbeRp2HmYPAv0IiYqeQETmEP4V5+pfgbgtjGHdofYFB2EtlEM2DNXhWcHdlCplQExbgWryquJtu4Kxq6SdjqWJDL3Ehqxur8bSwp8gqZHctTDNiEW7Ca3oPvXdq4pgby4U/3XwsWchH9VHrH0le7+daGRVEc+htxwOD6uQk6j1hNHd8gcYAAAAASUVORK5CYII="/>
+	</defs>
+	<rect id="icons8-angry-dog-50 (2) 1" width="40.000000" height="40.000000" fill="url(#pattern_2_2130)" fill-opacity="1.000000"/>
+</svg>
