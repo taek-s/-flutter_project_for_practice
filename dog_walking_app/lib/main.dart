@@ -35,9 +35,9 @@ ThemeData _buildThemeData() {
   return baseTheme.copyWith(
     colorScheme: baseTheme.colorScheme.copyWith(
       background: ColorConst.baseColor,
-      primary: ColorConst.baseColor,
-      onPrimary: ColorConst.whiteColor,
-      secondary: ColorConst.greyColor01,
+      // primary: ColorConst.baseColor,
+      // onPrimary: ColorConst.whiteColor,
+      // secondary: ColorConst.greyColor01,
     ),
     textTheme: baseTheme.textTheme
         .copyWith(
@@ -45,6 +45,7 @@ ThemeData _buildThemeData() {
           headlineMedium: const TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 34.0,
+            color: ColorConst.whiteColor,
           ),
           // 헤더 밑 라벨 텍스트
           titleMedium: const TextStyle(
@@ -56,11 +57,13 @@ ThemeData _buildThemeData() {
           titleLarge: const TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 22.0,
+            color: ColorConst.whiteColor,
           ),
           // 본문 텍스트
           bodyMedium: const TextStyle(
             fontWeight: FontWeight.w500,
             fontSize: 13.0,
+            color: ColorConst.whiteColor,
           ),
         )
         .apply(

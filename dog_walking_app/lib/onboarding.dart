@@ -7,6 +7,7 @@ class Onboarding extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final ThemeData themeData = Theme.of(context);
     return Scaffold(
       body: Stack(
         alignment: AlignmentDirectional.center,
@@ -15,7 +16,10 @@ class Onboarding extends StatelessWidget {
           Image.asset('/images/onBoarding/onBoarding.png'),
           Column(
             children: [
-              Text('asdadas0'),
+              Text(
+                'Too tired to walk your dog?',
+                style: themeData.textTheme.titleLarge,
+              ),
             ],
           ),
         ],
