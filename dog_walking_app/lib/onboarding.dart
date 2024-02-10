@@ -61,6 +61,7 @@ class Onboarding extends StatelessWidget {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    // 중단 텍스트
                     Text(
                       'Too tired to walk your dog?',
                       style: textTheme.titleLarge,
@@ -72,7 +73,36 @@ class Onboarding extends StatelessWidget {
                     const SizedBox(
                       height: 22.0,
                     ),
+                    // 큰 버튼
                     buttonStyle(context, 'Join our community'),
+                    const SizedBox(
+                      height: 22.0,
+                    ),
+                    // 하단 텍스트 + 텍스트 버튼
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Text('Already a member?'),
+                        TextButton(
+                          onPressed: () {},
+                          style: const ButtonStyle(
+                            padding: MaterialStatePropertyAll(
+                              EdgeInsets.all(0.0),
+                            ),
+                          ),
+                          child: const Text(
+                            'Sign in',
+                            style: TextStyle(
+                              color: ColorConst.orangeColor,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 60.0,
+                    ),
                   ],
                 ),
               ],
