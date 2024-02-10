@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:dog_walking_app/common/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -52,6 +54,12 @@ ThemeData _buildThemeData() {
             fontWeight: FontWeight.w500,
             fontSize: 17.0,
             color: ColorConst.greyColor02,
+          ),
+          // 버튼 텍스트
+          titleSmall: const TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 17.0,
+            color: ColorConst.whiteColor,
           ),
           // 중간 크기 텍스트
           titleLarge: const TextStyle(
