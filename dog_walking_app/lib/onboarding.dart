@@ -70,7 +70,9 @@ class Onboarding extends StatelessWidget {
                             left: 5.0,
                             right: 5.0,
                           ),
-                          child: Image.asset('/images/onBoarding/Step01.png'),
+                          child: Image.asset(
+                            '/images/onBoarding/Step01.png',
+                          ),
                         ),
                         const Text('-'),
                         Padding(

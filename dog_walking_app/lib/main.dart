@@ -1,9 +1,8 @@
-import 'dart:ui';
-
 import 'package:dog_walking_app/common/colors.dart';
 import 'package:flutter/material.dart';
 
 import 'onboarding.dart';
+import 'signup.dart';
 
 void main() {
   runApp(const BaseWidget());
@@ -20,12 +19,14 @@ class _BaseWidgetState extends State<BaseWidget> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Dog Walking App',
-        initialRoute: '/Onboarding',
-        routes: {
-          "/Onboarding": (BuildContext context) => const Onboarding(),
-        },
-        theme: _dogWalkingAppTheme);
+      title: 'Dog Walking App',
+      initialRoute: '/Signup',
+      routes: {
+        "/Onboarding": (BuildContext context) => const Onboarding(),
+        "/Signup": (BuildContext context) => const Signup(),
+      },
+      theme: _dogWalkingAppTheme,
+    );
   }
 }
 
@@ -36,9 +37,9 @@ ThemeData _buildThemeData() {
   return baseTheme.copyWith(
     colorScheme: baseTheme.colorScheme.copyWith(
       background: ColorConst.baseColor,
-      // primary: ColorConst.baseColor,
-      // onPrimary: ColorConst.whiteColor,
-      // secondary: ColorConst.greyColor01,
+      primary: ColorConst.baseColor,
+      onPrimary: ColorConst.whiteColor,
+      secondary: ColorConst.greyColor01,
     ),
     textTheme: baseTheme.textTheme
         .copyWith(
@@ -76,5 +77,14 @@ ThemeData _buildThemeData() {
         .apply(
           fontFamily: 'Poppins',
         ),
+    inputDecorationTheme: InputDecorationTheme(
+      border: UnderlineInputBorder(
+        borderRadius: BorderRadius.circular(14.0),
+        borderSide: BorderSide.none,
+      ),
+      filled: true,
+      fillColor: ColorConst.greyColor01,
+      floatingLabelStyle: baseTheme.textTheme.bodyMedium,
+    ),
   );
 }
