@@ -61,6 +61,38 @@ class Onboarding extends StatelessWidget {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    // Step Icons 1-2-3
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(
+                            left: 5.0,
+                            right: 5.0,
+                          ),
+                          child: Image.asset('/images/onBoarding/Step01.png'),
+                        ),
+                        const Text('-'),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                            left: 5.0,
+                            right: 5.0,
+                          ),
+                          child: Image.asset('/images/onBoarding/Step02.png'),
+                        ),
+                        const Text('-'),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                            left: 5.0,
+                            right: 5.0,
+                          ),
+                          child: Image.asset('/images/onBoarding/Step03.png'),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 22.0,
+                    ),
                     // 중단 텍스트
                     Text(
                       'Too tired to walk your dog?',

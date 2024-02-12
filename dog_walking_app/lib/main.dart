@@ -20,13 +20,12 @@ class _BaseWidgetState extends State<BaseWidget> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Dog Walking App',
-      initialRoute: '/Onboarding',
-      routes: {
-        "/Onboarding": (BuildContext context) => const Onboarding(),
-      },
-      theme: _dogWalkingAppTheme,
-    );
+        title: 'Dog Walking App',
+        initialRoute: '/Onboarding',
+        routes: {
+          "/Onboarding": (BuildContext context) => const Onboarding(),
+        },
+        theme: _dogWalkingAppTheme);
   }
 }
 
