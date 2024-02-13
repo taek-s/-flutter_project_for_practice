@@ -62,22 +62,32 @@ class Signup extends StatelessWidget {
                         decoration: InputDecoration(
                           labelText: 'Fullname',
                         ),
+                        style: TextStyle(
+                          height: 2.2,
+                        ),
                       ),
-                      const SizedBox(
+                      SizedBox(
                         height: 22.0,
                       ),
                       TextField(
                         decoration: InputDecoration(
                           labelText: 'E-mail',
                         ),
+                        style: TextStyle(
+                          height: 2.2,
+                        ),
                       ),
-                      const SizedBox(
+                      SizedBox(
                         height: 22.0,
                       ),
                       TextField(
                         decoration: InputDecoration(
                           labelText: 'Password',
                         ),
+                        style: TextStyle(
+                          height: 2.2,
+                        ),
+                        obscureText: true,
                       ),
                     ],
                   ),
