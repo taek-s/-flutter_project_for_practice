@@ -14,18 +14,24 @@ class Signup extends StatelessWidget {
     return Scaffold(
       // Container로 margin 설정
       body: Container(
-        margin: const EdgeInsets.fromLTRB(15.0, 55.0, 15.0, 55.0),
+        margin: const EdgeInsets.fromLTRB(15.0, 22.0, 15.0, 22.0),
         // 본문
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // 뒤로가기 버튼
             Row(
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                IconButton(
-                  padding: const EdgeInsets.all(0.0),
+                TextButton(
+                  style: const ButtonStyle(
+                    padding: MaterialStatePropertyAll(
+                      EdgeInsets.zero,
+                    ),
+                    alignment: Alignment.centerLeft,
+                  ),
                   onPressed: () {},
-                  icon: Icon(
+                  child: Icon(
                     Icons.arrow_back,
                     color: themeData.colorScheme.onPrimary,
                   ),
@@ -111,8 +117,15 @@ class Signup extends StatelessWidget {
                 ),
               ),
             ),
-            elevatedButtonStyleIconText(context, 'Connect with Facebook',
-                Icon(Icons.facebook), ColorConst.blueColor),
+            elevatedButtonStyleIconText(
+                context,
+                'Connect with Facebook',
+                SvgPicture.asset(
+                  '/images/logo/facebook.svg',
+                  width: 24.0,
+                  height: 24.0,
+                ),
+                ColorConst.blueColor),
             const SizedBox(
               height: 10.0,
             ),
@@ -124,10 +137,41 @@ class Signup extends StatelessWidget {
                   width: 24.0,
                   height: 24.0,
                 ),
-                Colors.transparent),
+                ColorConst.baseColor),
             const SizedBox(
-              height: 10.0,
+              height: 22.0,
             ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text(
+                      'By signing in, I agree with ',
+                    ),
+                    Text(
+                      'Terms of Use',
+                      style: themeData.textTheme.bodyMedium!.copyWith(
+                        color: ColorConst.greyColor03,
+                      ),
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text('and '),
+                    Text(
+                      'Privacy Policy',
+                      style: themeData.textTheme.bodyMedium!.copyWith(
+                        color: ColorConst.greyColor03,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            )
           ],
         ),
       ),

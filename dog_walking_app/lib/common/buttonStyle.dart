@@ -45,12 +45,21 @@ Widget elevatedButtonStyleOrange(BuildContext context, String innerText) {
 Widget elevatedButtonStyleIconText(
     BuildContext context, String innerText, Object icon, Color color) {
   final TextTheme textTheme = Theme.of(context).copyWith().textTheme;
+
+  Border border = Border.all();
+  if (color == ColorConst.baseColor) {
+    border = Border.all(
+      color: ColorConst.whiteColor,
+    );
+  }
+
   return Container(
     width: double.maxFinite,
     height: 60.0,
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(14.0),
       color: color,
+      border: border,
     ),
     child: ElevatedButton(
       style: ElevatedButton.styleFrom(
@@ -65,7 +74,7 @@ Widget elevatedButtonStyleIconText(
         ),
       ),
       onPressed: () {},
-      child: Row(
+      child: Stack(
         children: [
           if (icon is Icon)
             icon
@@ -73,9 +82,16 @@ Widget elevatedButtonStyleIconText(
             icon
           else if (icon is SvgPicture)
             icon,
-          Text(
-            innerText,
-            style: textTheme.titleSmall,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                innerText,
+                style: textTheme.titleSmall!.copyWith(
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ],
           ),
         ],
       ),

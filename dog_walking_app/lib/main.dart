@@ -85,7 +85,7 @@ ThemeData _buildThemeData() {
       filled: true,
       fillColor: ColorConst.greyColor01,
       floatingLabelStyle: baseTheme.textTheme.bodyMedium,
-      contentPadding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 12.0),
+      contentPadding: const EdgeInsets.fromLTRB(16.0, 10.0, 16.0, 10.0),
     ),
   );
 }
