@@ -1,4 +1,5 @@
 import 'package:dog_walking_app/common/buttonStyle.dart';
+import 'package:dog_walking_app/mapper/pageMapper.dart';
 import 'package:flutter/material.dart';
 
 import 'common/colors.dart';
@@ -111,7 +112,10 @@ class Onboarding extends StatelessWidget {
                     SizedBox(
                       width: 325.0,
                       child: elevatedButtonStyleOrange(
-                          context, 'Join our community'),
+                        context,
+                        'Join our community',
+                        Pages.signup,
+                      ),
                     ),
                     const SizedBox(
                       height: 22.0,

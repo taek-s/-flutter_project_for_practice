@@ -1,6 +1,7 @@
 import 'package:dog_walking_app/common/colors.dart';
 import 'package:flutter/material.dart';
 
+import 'home.dart';
 import 'onboarding.dart';
 import 'signup.dart';
 
@@ -20,10 +21,11 @@ class _BaseWidgetState extends State<BaseWidget> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Dog Walking App',
-      initialRoute: '/Signup',
+      initialRoute: '/Home',
       routes: {
         "/Onboarding": (BuildContext context) => const Onboarding(),
         "/Signup": (BuildContext context) => const Signup(),
+        "/Home": (BuildContext context) => const Home(),
       },
       theme: _dogWalkingAppTheme,
     );
@@ -86,6 +88,12 @@ ThemeData _buildThemeData() {
       fillColor: ColorConst.greyColor01,
       floatingLabelStyle: baseTheme.textTheme.bodyMedium,
       contentPadding: const EdgeInsets.fromLTRB(16.0, 10.0, 16.0, 10.0),
+    ),
+    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      showUnselectedLabels: true,
+      type: BottomNavigationBarType.fixed,
+      unselectedItemColor: ColorConst.greyColor01,
+      selectedItemColor: ColorConst.whiteColor,
     ),
   );
 }

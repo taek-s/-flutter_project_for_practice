@@ -30,7 +30,9 @@ class Signup extends StatelessWidget {
                     ),
                     alignment: Alignment.centerLeft,
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
                   child: Icon(
                     Icons.arrow_back,
                     color: themeData.colorScheme.onPrimary,
@@ -107,7 +109,7 @@ class Signup extends StatelessWidget {
             const SizedBox(
               height: 22.0,
             ),
-            elevatedButtonStyleOrange(context, 'Sign up'),
+            elevatedButtonStyleOrange(context, 'Sign up', null),
             Padding(
               padding: const EdgeInsets.all(11.0),
               child: Text(
