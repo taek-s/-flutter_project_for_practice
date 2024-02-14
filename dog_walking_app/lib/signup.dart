@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+
+import 'common/buttonStyle.dart';
+import 'common/colors.dart';
 
 class Signup extends StatelessWidget {
   const Signup({super.key});
@@ -52,7 +56,7 @@ class Signup extends StatelessWidget {
             const SizedBox(
               height: 22.0,
             ),
-            Row(
+            const Row(
               children: [
                 SizedBox(
                   width: 343.0,
@@ -93,6 +97,36 @@ class Signup extends StatelessWidget {
                   ),
                 )
               ],
+            ),
+            const SizedBox(
+              height: 22.0,
+            ),
+            elevatedButtonStyleOrange(context, 'Sign up'),
+            Padding(
+              padding: const EdgeInsets.all(11.0),
+              child: Text(
+                'or',
+                style: themeData.textTheme.titleSmall!.copyWith(
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ),
+            elevatedButtonStyleIconText(context, 'Connect with Facebook',
+                Icon(Icons.facebook), ColorConst.blueColor),
+            const SizedBox(
+              height: 10.0,
+            ),
+            elevatedButtonStyleIconText(
+                context,
+                'Connet with Google',
+                SvgPicture.asset(
+                  '/images/logo/google.svg',
+                  width: 24.0,
+                  height: 24.0,
+                ),
+                Colors.transparent),
+            const SizedBox(
+              height: 10.0,
             ),
           ],
         ),

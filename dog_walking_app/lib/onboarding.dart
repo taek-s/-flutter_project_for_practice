@@ -108,7 +108,11 @@ class Onboarding extends StatelessWidget {
                       height: 22.0,
                     ),
                     // 큰 버튼
-                    buttonStyle(context, 'Join our community'),
+                    SizedBox(
+                      width: 325.0,
+                      child: elevatedButtonStyleOrange(
+                          context, 'Join our community'),
+                    ),
                     const SizedBox(
                       height: 22.0,
                     ),
