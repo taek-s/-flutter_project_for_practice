@@ -35,6 +35,17 @@ class Home extends StatelessWidget {
                     context, 'Book a walk', Icons.add, null),
               ],
             ),
+            const SizedBox(
+              height: 22.0,
+            ),
+            DropdownButtonFormField(
+              items: [
+                DropdownMenuItem(
+                  child: Text('Your location...'),
+                ),
+              ],
+              onChanged: (value) {},
+            )
           ],
         ),
       ),
