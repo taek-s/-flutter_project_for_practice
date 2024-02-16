@@ -12,6 +12,7 @@ class ColorConst {
 
   // OTHER Color
   static const Color blackColor = Color(0xFF383838);
+  static const Color blackColor2 = Color(0xFF202020);
   static const Color greyColor01 = Color(0xFF515153);
   static const Color greyColor02 = Color(0xFFAEAEB2);
   static const Color greyColor03 = Color(0xFFB0B0B0);
